@@ -1,7 +1,7 @@
 variable lambda_function_name {
     description     = "Name of lambda function"
     type            = string
-    default         = "luqman-package-scan-lambda-fn"
+    default         = "luke-package-scan-lambda-fn"
 }
 
 variable lambda_file_name {
@@ -19,11 +19,11 @@ variable "iam_name" {
 variable "vpc_name" {
   description = "The ID of the VPC"
   type        = string
-  default     = "luqman-vpc-tf-module"
+  default     = "luke-vpc-tf-module"
 }
 
 variable "created_by" {
     description = "The name of vpc creator"
     type        = string
-    default     = "luqman"
+    default     = "luke"
 }
