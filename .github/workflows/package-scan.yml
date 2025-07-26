@@ -3,7 +3,8 @@ run-name: ${{ github.actor }} is performing package vulnerability scans for serv
 
 on:
   push:
-  workflow_dispatch:
+    branches:
+    - main # Or your desired branch name
 
 jobs:
   pre-deploy:
@@ -144,5 +145,5 @@ jobs:
       - name: Terraform init
         run: terraform init
 
-      - name: Terraform destroy
-        run: terraform destroy -auto-approve
+      #- name: Terraform destroy
+      #  run: terraform destroy -auto-approve

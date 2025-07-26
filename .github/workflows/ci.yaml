@@ -2,9 +2,9 @@ name: CI Checks
 run-name: Running Terraform Checks by ${{ github.actor }}
 
 on:
- pull_request:
-   branches:
-     - main
+  push:
+    branches:
+    - main # Or your desired branch name
 
 jobs:
   Initial-Checks:
